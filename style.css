@@ -1,0 +1,177 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #1f1f1f,
+    #000
+  ); /* Gradient background */
+  color: #ffffff; /* White text for better visibility */
+}
+
+h2 {
+  color: #7fff00; /* Vibrant green for h2 */
+  text-shadow: 2px 2px 4px #000000; /* Add a subtle text shadow for depth */
+}
+
+h3 {
+  color: #7fff00; /* Vibrant green for h3 */
+  text-shadow: 1px 1px 2px #000000; /* Another layer of text shadow for h3 */
+}
+
+footer {
+  padding: 20px;
+  color: #ffffff;
+  background: linear-gradient(
+    to bottom,
+    #096504,
+    #008000
+  ); /* Gradient background for footer */
+  text-align: center; /* Center align text in the footer */
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%; /* Ensure images don't overflow their containers */
+  height: auto; /* Maintain image aspect ratio */
+  border-radius: 10px; /* Add a slight border radius for a softer look */
+  box-shadow: 0 0 10px rgba(127, 255, 0, 0.5); /* Vibrant green shadow for images */
+}
+
+.profile {
+  background: #0d7c43; /* Dark background for cards */
+  color: #ffffff; /* White text color */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  margin: 20px; /* Add margin for spacing */
+  box-shadow: 0 0 10px rgba(127, 255, 0, 0.5); /* Vibrant green shadow for cards */
+}
+
+.profile header {
+  text-align: center;
+  color: #ffffff; /* White text color */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  width: auto;
+  margin: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  background: #1f1f1f; /* Dark background for cards */
+  color: #ffffff; /* White text color */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  margin: 20px; /* Add margin for spacing */
+  box-shadow: 0 0 10px rgba(127, 255, 0, 0.5); /* Vibrant green shadow for cards */
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  text-align: center;
+  color: #057f05ef; /* Neon green font color */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Neon text-shadow effect */
+  background: linear-gradient(45deg, #2b2b2b 20%, #bdbdbd 40%, #0d0d0d 60%); /* Dark gradient background with thinner thickness */
+  background-size: 200% 200%; /* Enhance the motion effect */
+  animation: motionBackground 5s infinite linear; /* Motion animation */
+}
+@keyframes motionBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Add padding to links for better clickability */
+  font-size: 18px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #066527;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(127, 255, 0, 0.5); /* Vibrant green shadow for cards */
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+}
+header {
+  display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+aside section {
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+
+}
+aside header p {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px;
+  background-color: #ff0000; /* Orange background for warning */
+  border: 2px solid #ffffff; /* White border for contrast */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  position: relative;
+  animation: pulseWarning 1s infinite alternate; /* Blinking animation */
+}
+
+@keyframes pulseWarning {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
